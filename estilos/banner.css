@@ -1,12 +1,17 @@
 *{
     margin:0;
     padding:0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    
     box-sizing: border-box;
     font-family: Pacifico, cursive;
 
 }
 body{
     background: #f1faff;
+    
 }
 
 .banner__imagen{
@@ -46,3 +51,4 @@ body{
 
     
 }
+
