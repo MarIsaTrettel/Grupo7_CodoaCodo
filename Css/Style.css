@@ -1,0 +1,20 @@
+#img_pag_individual {
+    width: 80%;
+    height: 80%;
+    padding: 0 10%;
+}
+
+h2 {
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(34, 32, 43);
+
+}
