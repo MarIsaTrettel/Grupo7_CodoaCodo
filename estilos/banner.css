@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+    font-family: Pacifico, cursive;
+
+}
+body{
+    background: #f1faff;
+    
+}
+
+.banner__imagen{
+    background: url("../imagenes/banner.jpg") no-repeat center/cover;
+    width: 100%;
+    height: calc(100vh - 51px);
+}
+
+
+
+.banner__titulo{
+    color: #21d839;
+    font-family: Pacifico, cursive;
+    font-size: 3rem;
+    position: absolute;
+    left:50%;
+    text-align: center;
+    top:50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+    
+
+    
+
+@media screen and (min-width:768px){
+    .banner__imagen{
+        height: calc(100vh - 72px);
+    }
+    .banner__titulo{
+        font-size: 5.0625rem;
+    }
+
+    
+}
+
