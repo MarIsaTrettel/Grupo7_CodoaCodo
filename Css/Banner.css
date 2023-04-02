@@ -8,9 +8,11 @@ header {
     top: 0;
 }
 
+
 #nombre_pagina {
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
+    padding: 2% 0;   
 }
 
 #logo {
@@ -20,10 +22,10 @@ nav {
     position: fixed;
     left: 0;
     right: 0;
-    top: 60px;
-    background-color: rgba(241, 181, 102, 0.5);
+    top: 80px;
+    background-color: rgba(247, 129, 34, 0.5);
     width: 100%;
-    height: 50px;
+    height: 70px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -40,6 +42,6 @@ nav ul {
 }
 nav li {
     margin: 0 1rem;
-    padding: 1rem;
+    padding: 5% 0;
     font-weight: bold;
 }
