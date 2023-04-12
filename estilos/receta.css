@@ -1,9 +1,20 @@
 #contenedor_superior {
-    margin-top: 5%;
+    margin: 5%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
     flex-wrap: wrap;
 }
+
+h2 {
+    margin-left:15%;
+}
+
+ol {
+    width: 1000px;
+    margin: auto;   
+}
+
+
 
