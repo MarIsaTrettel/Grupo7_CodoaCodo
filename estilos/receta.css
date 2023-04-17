@@ -1,14 +1,12 @@
 @media only screen and (min-device-width: 1200px){
 
-
-
-
-main {
+section {
     display: block;
     border: 3px solid rgba(66, 126, 247, 0.344);
     border-radius: 5px;
     width: 1200px;
-    margin: 100px auto;
+    margin: 50px auto;
+    background-color: #f3f3f3;
 }
 
 
@@ -21,11 +19,13 @@ main {
 }
 
 .sector_uno_uno {
-    width: 550px;
+    width: 45%;
     height: 290px;
     border: 2px solid rgb(0, 85, 255);
     border-radius: 10px;
     margin: 30px 0;
+    padding-left: 5%;
+    background-color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -52,12 +52,40 @@ ol {
 #contenedor_dos{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
     flex-wrap: wrap;
-    margin: 50px 25px;
     border: 2px solid rgb(0, 85, 255);
     border-radius: 10px;
     padding: 3%;
+    margin: 0 2% 2%;
+    background-color: rgb(255, 255, 255)
 }
+
 }
+
+@media screen and (max-width:360px){
+
+    .sector_uno_uno {
+        height: 290px;
+        border: 2px solid rgb(0, 85, 255);
+        border-radius: 10px;
+        margin: 30px 0;
+        
+    }
+
+    .sector_uno_dos img{
+        width: 100%;
+        background-size: cover;
+        border: 2px solid rgb(0, 85, 255);
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    #contenedor_dos{
+        border: 2px solid rgb(0, 85, 255);
+        border-radius: 10px;
+        padding: 3%;
+    }
+
+    }
