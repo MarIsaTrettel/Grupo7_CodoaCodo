@@ -15,7 +15,7 @@ body{
 }
 
 .banner__imagen{
-    background: url("../imagenes/banner.jpg") no-repeat center/cover;
+    background: url("../imagenes/banner.gif") no-repeat center/cover; /* CAMBIE IMAGEN*/
     width: 100%;
     height: calc(100vh - 51px);
 }
