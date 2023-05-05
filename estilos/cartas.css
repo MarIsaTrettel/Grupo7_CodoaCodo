@@ -1,7 +1,7 @@
 .contenedor_cartas{
     max-width: 1200px;
     margin:auto;
-    margin-top: 100px;
+    margin-top: 5px;
     perspective: 1000px;
     display: flex;
     justify-content: center;
@@ -90,4 +90,9 @@
 }
 .body_card_back input:hover{
     box-shadow: 1px 1px 30px 0px  #449de6;
+}
+
+.body_card_front img{
+    width:40%; 
+    border-radius: 5px;
 }
