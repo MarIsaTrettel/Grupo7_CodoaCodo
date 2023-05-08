@@ -19,7 +19,7 @@
     min-height: 290px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(0, 85, 255);
+    border: 2px solid rgb(18, 73, 184);
 }
 .nombre_receta {
     text-align: justify;    
@@ -36,11 +36,6 @@
     padding-bottom: 2px;
     width:45%;
     padding-top: 2px
-}
-
-ol {
-    width: 960px;
-    margin: auto;   
 }
 .imagen_receta img{
     width: 100%;
@@ -82,15 +77,26 @@ ol {
     padding-bottom: 0.5rem;
 }
 
-@media only screen and (max-device-width: 800px){
+@media only screen and (max-device-width: 901px){
+
     .receta_completa {
+        display: flex;
         flex-direction: column;
+        margin-top: 0;
     }
     
-    .nombre_receta{
-        color: red;
-        text-align: center;
-        vertical-align: middle;
-
+    .imagen_receta {
+        order: -2;
+        width: 98%;
+        max-width: 350px;
+        margin: 10% 0;
+    }
+    .ingredientes {
+        width: 98%;
+        height: 290px;
+        min-height: 290px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(18, 73, 184);
     }
 }
