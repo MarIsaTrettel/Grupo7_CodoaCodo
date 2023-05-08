@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="estilos/somos.css" rel="stylesheet" />
+    <link href="estilos/menu.css" rel="stylesheet" />
+    <link href="estilos/cartas.css" rel="stylesheet" />
+    <link href="estilos/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/banner.css">
+    <title>inicio</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_superior">
+            <div class="logo">
+                <img src="imagenes/logo.gif">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="¿Qué deseas buscar?">
+            </div>
+        </div>
+        <div class="container_menu">
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label for="check__menu" id="label__check">
+                    <i class="fa-solid fa-bars icon_menu"></i>
+                </label>
+                <nav>
+                    <ul>                       
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i>HOME</a></li>
+                        <li><a href="#"><i class="fa-solid fa-utensils"></i>RECETAS</a>
+                            <ul>
+                                <li><a href="#">COMIDA CHINA</a></li>
+                                <li><a href="#">COMIDA MEXICANA</a></li>
+                                <li><a href="#">COMIDA ITALIANA</a></li>
+                                <li><a href="#">COMIDA ARABE</a></li>
+                                <li><a href="#">COMIDA ESPAÑOLA</a></li>
+                                <li><a href="#">COMIDA HINDU</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#somos"><i class="fa-sharp fa-solid fa-people-roof"></i>QUIENES SOMOS</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i>CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner__imagen">
+            <img src="imagenes/banner.gif" alt="">
+        </div>
+    </section>
+
+    <main>
+        <!-- dos columnas somos y contacto -->
+        
+        <div class="contenedor_cartas">
+                <div class="float-child" id="somos">
+                    
+                        <h3 > Sobre nosotros </h3>
+                        <p> &nbsp; Somos un grupo de personas amantes de la buena cocina convencidos de que un buen plato exige cuidado, conocimiento y los mejores ingredientes.</p>
+                        <p> &nbsp; Por ello nos asociamos con diferentes actores para facilitar el acceso a todos los elementos necesarios del virtuoso círculo culinario. 
+                            Nuestros asociados te ayudarán con todo lo necesario para preparar ese plato que fascinará a tus invitados o el que anhelas desde hace semanas o 
+                            simplemente aquel que te sacará del paso.</p>
+                        <p> &nbsp; No dejes de visitar nuestros <a href="#exponsors">exponsors</a> para ver los puntos de venta y obtener excelentes descuentos.</p>
+                        <br>
+                    
+                        <h3 > Fundadores </h3>
+                        <div class="float-father-cv">
+                            <div class="float-child-cv">
+                                <img class="img-cv" alt="foto: Roberta Vinagre" title="foto RV" src="imagenes/RobertaVinagre.png">
+                                <h4>Roberta Vinagre</h4>
+                                <p>Roberta es chef desde 1999. Prefiere la comida mexicana tradicional
+                                    ,muy sasonada y llena de colores. <br> <br> <br>
+                                </p>
+                            </div>
+
+
+                            <div class="float-child-cv">
+                                <img class="img-cv" alt="foto: Ricardo Caneloni" title="foto RV" src="imagenes/RicardoCaneloni.png">
+                                <h4>Ricardo Caneloni</h4>
+                                <p>Ricardo es cocinero desde 2005. Su pasión por las carnes asadas es legendaria. Su cadena de restaurantes 
+                                    <i>A las brasas</i> tiene más de 7 locales en las principales capitales de provincia argentinas.
+                                </p>
+                            </div>
+
+
+                            <div class="float-child-cv">
+                                <img class="img-cv" alt="foto: July Salad" title="foto RV" src="imagenes/JulySalad.png">
+                                <h4>July Salad</h4>
+                                <p>July es una amante del arte culinario y fundadora de la academia de cocina Superior's Salad. 
+                                    Sus alumnos pueden hacer feliz a cualquier comensal sin alterar su ácido úrico. 
+                                </p>
+                            </div>
+                        </div>
+
+                            <div class="float-child-esponsor">
+                                <h4>Esponsors y asociados</h4>
+                                <p>Cámara de empanadas de Tigre. 
+                                    Córdoba chori Center. 
+                                    Club de pezca Rio Paraná. 
+                                    Distribuidora de alimentos Pepe. 
+                                    Cámara de frigoríficos de Mendoza. 
+                                    Disco "¿qué necesitas?".
+                                    Dietéticas asociadas de Tucumán.
+                                    Restaurantes del Centro.
+                                </p>
+                            </div>
+                </div> 
+
+                     
+            <div class="float-child" id="contactopcv">
+            
+            <article>
+                <h3> Envianos tu receta o comentario </h3>
+                <form action="" class="form-contacto">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" name="nombre" id="decir" class="form-control" placeholder="Nombre completo">
+                    <label for="correo">Dirección de correo</label>
+                    <input type="email" name="correo" id="correo" class="form-control" placeholder="Dirección d@ correo">
+                    <label for="comentario">Déjanos tu comentario</label>
+                    <textarea name="comentario" id="comentario" class="f_comentario" placeholder='   Escribe tu comentario...' maxlength="2550"></textarea>
+                    
+                    <div class="inputfile">
+                        <!-- <label for="mireceta" class="label_mireceta">Seleccione un archivo:</label> -->
+                        <p class="p_adjunto">Seleccione uno o mas archivos conteniendo la descripción
+                            de la receta y un máximo de tres fotos de las mismas. 
+                            Comprimir todos los archivos en un archivo ".zip" </p>
+                        <p class="p_adjunto">La receta enviada debe contener los siguientes tópicos:</p>
+                        <ul>
+                            <li><b>Nombre o título</b></li>
+                            <li><b>Descripción</b></li>
+                            <li><b>Lista de ingredientes (nombre, cantidad, unidades)</b></li>
+                            <li><b>Procedimiento</b></li>
+                        </ul> 
+
+                        <div class="file-select" id="src-file" >
+                            <input type="file" name="src-file" aria-label="Archivo" multiple>
+                        </div>
+
+                    </div>
+                    
+                    <div class="center"><button type="submit" class="boton-contacto">Enviar</button></div>
+                  </form> 
+            </div>
+            
+        </div>
+
+        <!-- separador vertical -->
+        <div class="separadorv"></div>
+    </main>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id= "wave1"></div>
+            <div class="wave" id= "wave2"></div>
+            <div class="wave" id= "wave3"></div>
+            <div class="wave" id= "wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="#">
+                <i class="fa-brands fa-facebook"></i> 
+            </a></li>
+            <li><a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a></li>
+            <li><a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a></li>
+            
+        </ul>
+
+        <ul class="menufooter">
+            <li><a href="#" class="contacto">
+                <i class="fa-solid fa-location-dot"></i> 
+                Av. Las malvinas 2789-CBA
+
+            </a></li>
+            <li>
+                <a href="#" class="contacto">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +5493517834903
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="contacto">
+                    <i class="fa-solid fa-envelope"></i> 
+                    tumejorcomida@gmail.com
+
+                </a>
+            </li>
+        </ul>
+        <p class="autor"><i class="fa-solid fa-copyright"></i>2023- Todos los Derechos Reservados| Grupo 7 </p>
+
+
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7fda2717d4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

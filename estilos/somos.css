@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Pacifico, cursive;
+
+}
+body{
+    background: #f1faff;
+    
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+    /* border: 3px solid green;  */
+  }
+
+.banner__imagen_wa{
+    background: url("../imagenes/banner.jpg") no-repeat center/cover;
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    height: calc(25vh);
+}
+
+
+.banner__titulo_wa {
+    color: #21d839;
+    font-family: Pacifico, cursive;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    align-items: center;
+}
+
+.float-father-cv{
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+
+.float-child-cv {
+    flex-wrap: wrap;
+    background-color: rgba(13, 0, 255, 0.109);
+    width: 30%;
+    float: left;
+    padding: 5% 0% 0% 0%;
+    margin: 1%;
+    border: 2px solid rgb(0, 85, 255);
+    border-radius: 10px;
+} 
+
+.float-child h3{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.float-child p{
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5px;
+    margin:0px;}
+
+
+.float-child {
+    width: 90vw;
+    /* height: 500px; */
+    float: left;
+    /* padding: 5% 0%; */
+    margin: 1%;
+    border: 2px solid rgba(66, 126, 247, 0.344);
+    border-radius: 10px;
+} 
+
+.float-child-esponsor {
+    width: 98%;
+    float: left;
+    padding: 5% 0% 0% 0%;
+    margin: 1%;
+    /* border: 2px solid rgba(66, 126, 247, 0.344); */
+    border-radius: 10px;
+} 
+
+.img-cv {
+    width: 100%;
+    object-fit: contain;
+}
+
+.w100{
+    margin: 10% 1%;
+    float:left;
+    width: 100%;
+    align-items: center;
+}
+
+.separadorv{
+    height:1450px;
+}
+
+.form-contacto{
+    margin:1%;
+}
+
+.form-contacto label{
+    margin-left: 3%;
+}
+
+.form-control {
+    margin: 0% 0% 3% 0%;
+}   
+
+.f_comentario{
+    resize: none;
+    height: 100px;
+    width: 100%;
+}
+
+.boton-contacto{
+    padding: 10px;
+    font-weight: 800;
+    background-color:#5678EF;
+    color:white;
+     /* rgb(151, 158, 255); */
+    border-radius: 5px;
+}
+
+.inputfile {
+    margin:10px;
+}
+
+.p_adjunto{
+    marging: 0%;
+    /* padding: 1px; */
+}
+
+.file-select {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .file-select::before {
+    background-color: #5678EF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Seleccionar'; /* testo por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .file-select input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 32px;
+    display: inline-block;
+  }
+  
+  #src-file::before {
+    content: 'Seleccionar Archivos';
+  }
+
+  .separadorv{
+    height: 1px;
+    margin-bottom: 100px;
+    }
+
+
+
+  @media screen and (max-width:800px){
+
+    .banner__titulo_wa{
+        font-size: 3rem;
+    }
+    .float-child-cv{
+        width:98%;
+    }
+
+    .f_comentario{
+        cols="50";
+    }
+
+    .float-father-cv {
+        flex-direction: column;
+    }
+
