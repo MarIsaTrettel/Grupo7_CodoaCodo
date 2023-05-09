@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    
+    <link href="estilos/menu.css" rel="stylesheet" />
+    <link href="estilos/cartas.css" rel="stylesheet" />
+    <link href="estilos/footer.css" rel="stylesheet" />
+    <link href="estilos/somos.css" rel="stylesheet" />
+    <link href="estilos/inscripcion.css" rel="stylesheet" />
+    <title>inscripción</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_superior">
+            <div class="logo">
+                <img src="imagenes/logo.jpg" >
+
+            </div>
+            <div class="search">
+                <input type="search" placeholder="¿Qué deseas buscar?">
+            </div>
+        </div>
+        <div class="container_menu">
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label for="check__menu" id="label__check">
+                    <i class="fa-solid fa-bars icon_menu"></i>
+                </label>
+                <nav>
+                    <ul>                       
+                        <li><a href="index.html">
+                                <i class="fa-solid fa-house"></i> home
+                               
+                            </a>
+                            
+                        </li>
+                        <li><a href="index.html">
+                            <i class="fa-solid fa-utensils"></i> 
+                                Recetas
+                            </a>
+                            <ul>
+                                <li><a href="#">recetas faciles</a></li>
+                                <li><a href="#">recetas niños</a></li>
+                                <li><a href="#">recetas verano</a></li>
+                                <li><a href="#">recetas de pollo</a></li>
+                                <li><a href="#">recetas saludables</a></li>
+                                <li><a href="#">recetas vegetarianas</a></li>
+                            </ul>
+                        </li>
+    
+                        <li><a href="weare#somos">
+                                <i class="fa-sharp fa-solid fa-people-roof"></i>
+                                Quienes somos
+                            </a></li>
+                        <li><a href="login.html" id="a_ingresar">
+                                <i class="fa-solid fa-sign-in"></i>
+                                Ingresar
+                        </a></li>
+                            <li><a href="inscripcion.html">
+                                <i class="fa-solid fa-user-plus"></i>
+                                Inscribirse
+                        </a></li>
+                        <li><a href="#">
+                                <i class="fa-solid fa-envelope"></i>
+                                Contacto
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+
+    <section class="banner">
+        <div class="banner__imagen_wa">
+            <h2 class="banner__titulo_wa">Inscribite y pertenecé a nuestra comunidad</h2>
+        </div>
+        
+    </section>
+
+    <main>
+        <div class="contenedor_cartas">
+                <div class="float-child" id="somos">
+                    
+                        <h3 > Al inscribirte </h3>
+                        <p> &nbsp; Podrás enviarnos mensajes, recetas, y disfrutar de los beneficiosos aportes de nuestros exponsors. 
+                            Estos beneficios incluyen descuentos especiales en locales adheridos, compras, y otros</p>
+                        <br>
+ 
+                </div> 
+
+                     
+            <div class="float-child" id="contactopcv">
+            
+            <article>
+                <h3> Inscripción </h3>
+                <form action="" class="form-contacto" id="form-inscribir">
+                      
+                    <label for="nombre" class="clabel" id="lnombre">Nombre completo</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control" value="" placeholder="Nombre completo">
+                    
+                    <label for="dni" id="ldni">DNI o Pasaporte</label>
+                    <input type="number" name="dni" id="dni" class="form-control" placeholder="XXXXXXXX no uses puntos separadores">
+
+                    <label for="correo" id ="lcorreo">Dirección de correo</label>
+                    <input type="email" name="correo" id="correo" class="form-control" placeholder="Dirección d@ correo">
+
+                    <label for="usuario" id="lusuario">Nombre de usuario</label>
+                    <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Nombre de usuario (6 caracteres o más)">
+
+                    <label for="direccion" id="ldireccion">Dirección (calle, número, depto.)</label>
+                    <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ej: Calle 15, 1357, 1A">
+
+                    <label for="ciudad" id="lciudad">Ciudad, Provincia, País</label>
+                    <input type="text" name="ciudad" id="ciudad" class="form-control" placeholder="Ej: Villa Aquí, Córdoba, Arg.">
+
+                    <label for="pass1" id="lpas1">Contraseña</label>
+                    <input type="password" name="pas1" id="pas1" class="form-control" placeholder="requiere 8 a 12 caracteres">
+
+                    <label for="pass2" id="lpas2">Repetir contraseña</label>
+                    <input type="password" name="pas2" id="pas2" class="form-control" placeholder="igual a la anterior">
+
+                    
+                    <div class="center"><button type="submit" class="boton-contacto" id="mandar" onclick="">Enviar</button></div>
+                  </form> 
+            </div>
+            
+        </div>
+
+        <!-- separador vertical mantiene las olas en su lugar-->
+        <div class="separadorv"></div>
+    </main>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id= "wave1"></div>
+            <div class="wave" id= "wave2"></div>
+            <div class="wave" id= "wave3"></div>
+            <div class="wave" id= "wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="#">
+                <i class="fa-brands fa-facebook"></i> 
+            </a></li>
+            <li><a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a></li>
+            <li><a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a></li>
+            
+        </ul>
+
+        <ul class="menufooter">
+            <li><a href="#" class="contacto">
+                <i class="fa-solid fa-location-dot"></i> 
+                Av. Las malvinas 2789-CBA
+
+            </a></li>
+            <li>
+                <a href="#" class="contacto">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +5493517834903
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="contacto">
+                    <i class="fa-solid fa-envelope"></i> 
+                    tumejorcomida@gmail.com
+
+                </a>
+            </li>
+        </ul>
+        <p class="autor"><i class="fa-solid fa-copyright"></i>2023- Todos los Derechos Reservados| Grupo 7 </p>
+
+
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7fda2717d4.js" crossorigin="anonymous"></script>
+    <script src='scripts/inscribir.js'></script>
+    <script src='scripts/checkcredenciales.js'></script>
+</body>
+
+</html>

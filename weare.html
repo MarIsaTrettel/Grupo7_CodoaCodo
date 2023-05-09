@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link href="estilos/menu.css" rel="stylesheet" />
     <link href="estilos/cartas.css" rel="stylesheet" />
     <link href="estilos/footer.css" rel="stylesheet" />
-    <title>inicio</title>
+    <title>quienes_somos</title>
 </head>
 
 <body>
@@ -21,6 +21,7 @@
                 <img src="imagenes/logo.jpg" >
 
             </div>
+            
             <div class="search">
                 <input type="search" placeholder="¿Qué deseas buscar?">
             </div>
@@ -39,7 +40,7 @@
                             </a>
                             
                         </li>
-                        <li><a href="#">
+                        <li><a href="index.html#">
                             <i class="fa-solid fa-utensils"></i> 
                                 Recetas
                             </a>
@@ -57,10 +58,20 @@
                                 <i class="fa-sharp fa-solid fa-people-roof"></i>
                                 Quienes somos
                             </a></li>
+
+                        <li><a href="login.html" id="a_ingresar">
+                                <i class="fa-solid fa-sign-in"></i>
+                                Ingresar
+                        </a></li>
+
+                        <li><a href="inscripcion.html">
+                                <i class="fa-solid fa-user-plus"></i>
+                                Inscribirse
+                        </a></li>                        
                         <li><a href="#">
                                 <i class="fa-solid fa-envelope"></i>
                                 Contacto
-                            </a></li>
+                        </a></li>
                     </ul>
                 </nav>
             </div>
@@ -137,12 +148,12 @@
             
             <article>
                 <h3> Envianos tu receta o comentario </h3>
-                <form action="" class="form-contacto">
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" name="nombre" id="decir" class="form-control" placeholder="Nombre completo">
-                    <label for="correo">Dirección de correo</label>
+                <form action="" class="form-contacto" id="form-contacto">
+                    <label for="usuario" id="lusuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Nombre de usuario" disabled>
+                    <label for="correo" id="lcorreo">Dirección de correo</label>
                     <input type="email" name="correo" id="correo" class="form-control" placeholder="Dirección d@ correo">
-                    <label for="comentario">Déjanos tu comentario</label>
+                    <label for="comentario" id="lcomentario">Déjanos tu comentario</label>
                     <textarea name="comentario" id="comentario" class="f_comentario" placeholder='   Escribe tu comentario...' maxlength="2550"></textarea>
                     
                     <div class="inputfile">
@@ -157,14 +168,14 @@
                             <li><b>Lista de ingredientes (nombre, cantidad, unidades)</b></li>
                             <li><b>Procedimiento</b></li>
                         </ul> 
-
-                        <div class="file-select" id="src-file" >
-                            <input type="file" name="src-file" aria-label="Archivo" multiple>
+                        <p class="p_adjunto" id="lp_adjunto"></p>
+                        <div class="file-select">
+                            <input type="file" name="src-file"  id="src-file" aria-label="Archivo" multiple >
                         </div>
 
                     </div>
                     
-                    <div class="center"><button type="submit" class="boton-contacto">Enviar</button></div>
+                    <div class="center"><button type="submit" class="boton-contacto" id="mandar">Enviar</button></div>
                   </form> 
             </div>
             
@@ -228,6 +239,8 @@
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7fda2717d4.js" crossorigin="anonymous"></script>
+    <script src='scripts/weare.js'></script>
+    <script src='scripts/checkcredenciales.js'></script>
 </body>
 
 </html>
