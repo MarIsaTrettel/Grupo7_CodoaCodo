@@ -158,6 +158,10 @@ nav ul li ul li a:hover{
     display:none;
 }
 
+#a_ingresar{
+    text-transform: uppercase;
+}
+
 @media screen and (max-width:720px){
     nav >ul{
         flex-direction: column;

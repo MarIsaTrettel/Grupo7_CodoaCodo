@@ -1,4 +1,4 @@
-#titulo_de_pagina {
+.titulo_de_pagina {
     font-size: 5rem;
     -webkit-text-stroke: 2px #fff;
     text-shadow:rgb(18, 73, 184) 1px 0 10px;

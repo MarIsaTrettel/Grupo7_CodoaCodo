@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link href="estilos/somos.css" rel="stylesheet" />
-    <link href="estilos/menu.css" rel="stylesheet" />
-    <link href="estilos/cartas.css" rel="stylesheet" />
-    <link href="estilos/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/receta.css">
+    <link rel="stylesheet" href="estilos/somos.css" />
+    <link rel="stylesheet" href="estilos/menu.css"/>
+    <link rel="stylesheet" href="estilos/cartas.css"/>
+    <link rel="stylesheet" href="estilos/footer.css"/>
     <link rel="stylesheet" href="estilos/banner.css">
     <link rel="icon" href="imagenes/logo_mini.gif">
     <title>QUIENES SOMOS - Tus mejores recetas</title>
@@ -44,6 +45,8 @@
                             </ul>
                         </li>
                         <li><a href="#"><i class="fa-sharp fa-solid fa-people-roof"></i>QUIENES SOMOS</a></li>
+                        <li><a href="login.html" id="a_ingresar"><i class="fa-solid fa-sign-in"></i>INGRESAR</a></li>
+                        <li><a href="inscripcion.html"><i class="fa-solid fa-user-plus"></i>INSCRIBIRSE</a></li>
                         <li><a href="weare.html#contacto"><i class="fa-solid fa-envelope"></i>CONTACTO</a></li>
                     </ul>
                 </nav>
@@ -116,38 +119,37 @@
                      
             <div class="float-child" id="contactopcv">
             
-            <article>
-                
-                <h3 class="titulo_comentario">ENVIANOS TU RECETA O COMENTARIO</h3>
-                
-                <form action="" class="form-contacto">
-                    <label for="nombre">NOMBRE</label>
-                    <input type="text" name="nombre" id="decir" class="form-control" placeholder="Nombre completo">
-                    <label for="correo">DIRECCION DE CORREO</label>
-                    <input type="email" name="correo" id="correo" class="form-control" placeholder="Dirección d@ correo (No se publicará)">
-                    <label for="comentario">COMENTARIO</label>
-                    <textarea name="comentario" id="comentario" class="f_comentario" placeholder='   Escribe tu comentario...' maxlength="2550"></textarea>
-                    
-                    <div class="inputfile">
-                        <!-- <label for="mireceta" class="label_mireceta">Seleccione un archivo:</label> -->
-                        <p class="p_adjunto">Seleccione uno o mas archivos conteniendo la descripción
-                            de la receta y un máximo de tres fotos de las mismas. 
-                            Comprimir todos los archivos en un archivo ".zip" </p>
-                        <p class="p_adjunto">La receta enviada debe contener los siguientes tópicos:</p>
-                        <ul>
-                            <li><b>Nombre o título</b></li>
-                            <li><b>Descripción</b></li>
-                            <li><b>Lista de ingredientes (nombre, cantidad, unidades)</b></li>
-                            <li><b>Procedimiento</b></li>
-                        </ul> 
-
-                        <div class="file-select" id="src-file" >
-                            <input type="file" name="src-file" aria-label="Archivo" multiple>
+                <article>
+                    <h3> ENVIANOS TU RECETA O COMENTARIO</h3>
+                    <form action="" class="form-contacto" id="form-contacto">
+                        <label for="usuario" id="lusuario">USUARIO</label>
+                        <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Nombre de usuario" disabled>
+                        <label for="correo" id="lcorreo">DIRECCION DE CORREO</label>
+                        <input type="email" name="correo" id="correo" class="form-control" placeholder="Dirección d@ correo">
+                        <label for="comentario" id="lcomentario">DEJANOS TU COMENTARIO</label>
+                        <textarea name="comentario" id="comentario" class="f_comentario" placeholder='   Escribe tu comentario...' maxlength="2550"></textarea>
+                        
+                        <div class="inputfile">
+                            <!-- <label for="mireceta" class="label_mireceta">Seleccione un archivo:</label> -->
+                            <p class="p_adjunto">Seleccione uno o mas archivos conteniendo la descripción
+                                de la receta y un máximo de tres fotos de las mismas. 
+                                Comprimir todos los archivos en un archivo ".zip" </p>
+                            <p class="p_adjunto">La receta enviada debe contener los siguientes tópicos:</p>
+                            <ul>
+                                <li><b>Nombre o título</b></li>
+                                <li><b>Descripción</b></li>
+                                <li><b>Lista de ingredientes (nombre, cantidad, unidades)</b></li>
+                                <li><b>Procedimiento</b></li>
+                            </ul> 
+                            <p class="p_adjunto" id="lp_adjunto"></p>
+                            <div class="file-select">
+                                <input type="file" name="src-file"  id="src-file" aria-label="Archivo" multiple >
+                            </div>
+    
                         </div>
 
-                    </div>
                     
-                    <div class="center"><button type="submit" class="boton-contacto">Enviar</button></div>
+                    <div class="center"><button type="submit" class="boton-contacto"id="mandar">Enviar</button></div>
                     <a class=volver_al_inicio href="#inicio">Volver al inicio</a>
                   </form> 
             </div>
@@ -193,7 +195,7 @@
                 </a>
             </li>
         </ul>
-        <p class="autor"><i class="fa-solid fa-copyright"></i>2023- Todos los Derechos Reservados| Grupo 7 </p>
+        <p class="autor"><i class="fa-solid fa-copyright"></i>2023 - Todos los Derechos Reservados | - Grupo 7 - </p>
 
 
     </footer>
@@ -206,6 +208,8 @@
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7fda2717d4.js" crossorigin="anonymous"></script>
+    <script src='scripts/weare.js'></script>
+    <script src='scripts/checkcredenciales.js'></script>
 </body>
 
 </html>
