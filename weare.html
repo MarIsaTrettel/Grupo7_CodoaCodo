@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href="estilos/somos.css" rel="stylesheet" />
     <link href="estilos/menu.css" rel="stylesheet" />
     <link href="estilos/cartas.css" rel="stylesheet" />
     <link href="estilos/footer.css" rel="stylesheet" />
-    <link rel="stylesheet" href="estilos/banner.css">
-    <title>inicio</title>
+    <title>quienes_somos</title>
 </head>
 
 <body>
     <header>
         <div class="header_superior">
             <div class="logo">
-                <img src="imagenes/logo.gif">
+                <img src="imagenes/logo.jpg" >
+
             </div>
+            
             <div class="search">
                 <input type="search" placeholder="¿Qué deseas buscar?">
             </div>
@@ -34,29 +34,56 @@
                 </label>
                 <nav>
                     <ul>                       
-                        <li><a href="index.html"><i class="fa-solid fa-house"></i>HOME</a></li>
-                        <li><a href="#"><i class="fa-solid fa-utensils"></i>RECETAS</a>
+                        <li><a href="index.html">
+                                <i class="fa-solid fa-house"></i> home
+                               
+                            </a>
+                            
+                        </li>
+                        <li><a href="index.html#">
+                            <i class="fa-solid fa-utensils"></i> 
+                                Recetas
+                            </a>
                             <ul>
-                                <li><a href="#">COMIDA CHINA</a></li>
-                                <li><a href="#">COMIDA MEXICANA</a></li>
-                                <li><a href="#">COMIDA ITALIANA</a></li>
-                                <li><a href="#">COMIDA ARABE</a></li>
-                                <li><a href="#">COMIDA ESPAÑOLA</a></li>
-                                <li><a href="#">COMIDA HINDU</a></li>
+                                <li><a href="#">recetas faciles</a></li>
+                                <li><a href="#">recetas niños</a></li>
+                                <li><a href="#">recetas verano</a></li>
+                                <li><a href="#">recetas de pollo</a></li>
+                                <li><a href="#">recetas saludables</a></li>
+                                <li><a href="#">recetas vegetarianas</a></li>
                             </ul>
                         </li>
-                        <li><a href="#somos"><i class="fa-sharp fa-solid fa-people-roof"></i>QUIENES SOMOS</a></li>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i>CONTACTO</a></li>
+    
+                        <li><a href="#somos">
+                                <i class="fa-sharp fa-solid fa-people-roof"></i>
+                                Quienes somos
+                            </a></li>
+
+                        <li><a href="login.html" id="a_ingresar">
+                                <i class="fa-solid fa-sign-in"></i>
+                                Ingresar
+                        </a></li>
+
+                        <li><a href="inscripcion.html">
+                                <i class="fa-solid fa-user-plus"></i>
+                                Inscribirse
+                        </a></li>                        
+                        <li><a href="#">
+                                <i class="fa-solid fa-envelope"></i>
+                                Contacto
+                        </a></li>
                     </ul>
                 </nav>
             </div>
         </div>
+        
     </header>
 
     <section class="banner">
-        <div class="banner__imagen">
-            <img src="imagenes/banner.gif" alt="">
+        <div class="banner__imagen_wa">
+            <h2 class="banner__titulo_wa">Quienes somos</h2>
         </div>
+        
     </section>
 
     <main>
@@ -121,12 +148,12 @@
             
             <article>
                 <h3> Envianos tu receta o comentario </h3>
-                <form action="" class="form-contacto">
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" name="nombre" id="decir" class="form-control" placeholder="Nombre completo">
-                    <label for="correo">Dirección de correo</label>
+                <form action="" class="form-contacto" id="form-contacto">
+                    <label for="usuario" id="lusuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Nombre de usuario" disabled>
+                    <label for="correo" id="lcorreo">Dirección de correo</label>
                     <input type="email" name="correo" id="correo" class="form-control" placeholder="Dirección d@ correo">
-                    <label for="comentario">Déjanos tu comentario</label>
+                    <label for="comentario" id="lcomentario">Déjanos tu comentario</label>
                     <textarea name="comentario" id="comentario" class="f_comentario" placeholder='   Escribe tu comentario...' maxlength="2550"></textarea>
                     
                     <div class="inputfile">
@@ -141,14 +168,14 @@
                             <li><b>Lista de ingredientes (nombre, cantidad, unidades)</b></li>
                             <li><b>Procedimiento</b></li>
                         </ul> 
-
-                        <div class="file-select" id="src-file" >
-                            <input type="file" name="src-file" aria-label="Archivo" multiple>
+                        <p class="p_adjunto" id="lp_adjunto"></p>
+                        <div class="file-select">
+                            <input type="file" name="src-file"  id="src-file" aria-label="Archivo" multiple >
                         </div>
 
                     </div>
                     
-                    <div class="center"><button type="submit" class="boton-contacto">Enviar</button></div>
+                    <div class="center"><button type="submit" class="boton-contacto" id="mandar">Enviar</button></div>
                   </form> 
             </div>
             
@@ -212,6 +239,8 @@
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7fda2717d4.js" crossorigin="anonymous"></script>
+    <script src='scripts/weare.js'></script>
+    <script src='scripts/checkcredenciales.js'></script>
 </body>
 
 </html>
