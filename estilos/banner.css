@@ -5,11 +5,11 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: Pacifico, cursive;
+    font-family: 'Lato', sans-serif;
 }
 
 body{
-    background: #f1faff;
+    background: #f4f7fa;
     display: block; 
 }
 

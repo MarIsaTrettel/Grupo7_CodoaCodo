@@ -5,11 +5,11 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: Pacifico, cursive;
+    font-family: 'Lato', sans-serif;
 
 }
 body{
-    background: #f1faff;
+    background: #f4f7fa;
     
 }
 
@@ -27,17 +27,6 @@ body{
     display: flex;
     align-items: center;
     height: calc(25vh);
-}
-
-
-.banner__titulo_wa {
-    color: #21d839;
-    font-family: Pacifico, cursive;
-    font-size: 5rem;
-    text-align: center;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    width: 100%;
-    align-items: center;
 }
 
 .float-father-cv{
@@ -60,6 +49,35 @@ body{
 .float-child h3{
     text-align: center;
     padding-bottom: 2%;
+    font-size: 3rem;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow:  rgb(18, 73, 184) 1px 0 10px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.float-child h4 {
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px #fff;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.nombre_asi_somos {
+    font-family: Pacifico, cursive;
+}
+
+.titulo_comentario a{
+    font-size: 3rem;
+    -webkit-text-stroke: 2px #fff;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    
 }
 
 .float-child p{
@@ -76,7 +94,7 @@ body{
     margin: 2% auto;
     border: 3px solid rgba(66, 126, 247, 0.344);
     border-radius: 5px;
-    background-color: #f3f3f3;
+    background-color: #f4f7fa;
 } 
 
 .float-child-esponsor {
