@@ -1,29 +1,35 @@
-#titulo_de_pagina{
-    margin-left: 10%;
+#titulo_de_pagina {
+    font-size: 3rem;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow:  #Fff 1px 0 10px;
+    color: #000;
+    font-weight: bold;
 }
-
+.lista_titulo_de_pagina a {
+    text-decoration: none;
+    color: #000 ;
+    font-size: 0.8rem;
+}
 .receta_completa {
     width: 100%;
     max-width: 1200px;
-    padding-top: 2%;
+    padding: 3% 0;
     border: 3px solid rgba(66, 126, 247, 0.344);
     border-radius: 5px;
-    margin: 2% auto;
+    margin: 5% auto;
     background-color: #f3f3f3;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    position: relative;
     flex-wrap: wrap;
 }
 .ingredientes {
     width: 50%;
     height: 290px;
     min-height: 290px;
+    margin: 0 4%;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(18, 73, 184);
+    border: 4px solid rgb(18, 73, 184);
 }
 .nombre_receta {
     text-align: justify;    
@@ -46,8 +52,9 @@
     max-width: 450px;
     height: 290px;
     background-size: cover;
-    border: 2px solid rgb(0, 85, 255);
+    border: 4px solid rgb(18, 73, 184);
     border-radius: 10px;
+
 }
 .imagen_receta{
     position: relative;
@@ -69,10 +76,10 @@
 .preparacion {
     width: 100%;
     max-width: 1100px;
-    border: 2px solid rgb(0, 85, 255);
+    border: 4px solid rgb(18, 73, 184);
     border-radius: 10px;
     padding: 5%;
-    margin: 15px 0 2%;
+    margin: 15px 4% 2%;
     background-color: rgb(255, 255, 255)
 }
 
