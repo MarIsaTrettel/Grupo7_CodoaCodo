@@ -1,0 +1,106 @@
+#titulo_de_pagina{
+    margin-left: 10%;
+}
+
+.receta_completa {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 2%;
+    border: 3px solid rgba(66, 126, 247, 0.344);
+    border-radius: 5px;
+    margin: 2% auto;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    flex-wrap: wrap;
+}
+.ingredientes {
+    width: 50%;
+    height: 290px;
+    min-height: 290px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(18, 73, 184);
+}
+.nombre_receta {
+    text-align: justify;    
+}
+.receta_completa > div{
+    box-shadow: 10px 10px 10px 1px rgba(32,32,32,0.3);
+    border-radius: 10px;
+}
+.ingredientes ul li{
+    padding-right:  2px;
+    display: inline;
+    padding-left:  2px;
+    float: left;
+    padding-bottom: 2px;
+    width:45%;
+    padding-top: 2px
+}
+.imagen_receta img{
+    width: 100%;
+    max-width: 450px;
+    height: 290px;
+    background-size: cover;
+    border: 2px solid rgb(0, 85, 255);
+    border-radius: 10px;
+}
+.imagen_receta{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.nombre{
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow:  #Fff 1px 0 10px;
+    color: #000;
+    font-weight: bold;
+}
+.preparacion {
+    width: 100%;
+    max-width: 1100px;
+    border: 2px solid rgb(0, 85, 255);
+    border-radius: 10px;
+    padding: 5%;
+    margin: 15px 0 2%;
+    background-color: rgb(255, 255, 255)
+}
+
+#titulo_receta {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-device-width: 901px){
+
+    .receta_completa {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    
+    .imagen_receta {
+        order: -2;
+        width: 98%;
+        max-width: 350px;
+        margin: 10% 0;
+    }
+    .ingredientes {
+        width: 98%;
+        height: 290px;
+        min-height: 290px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(18, 73, 184);
+    }
+}
