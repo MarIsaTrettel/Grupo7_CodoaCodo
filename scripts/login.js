@@ -8,8 +8,11 @@ let lusr = document.getElementById("lusuario")
 let lusr0 = lusr.innerText
 //pass
 let p1 = document.getElementById("pas1")
-
 let allok = false
+//session storage
+let ss = sessionStorage
+//cerrar sesión
+ss.removeItem("ss_usuario")
 
 submb.disabled = true
 submb.innerText = 'Completa los campos del formulario'
@@ -39,21 +42,19 @@ form.addEventListener('input', function (event) {
 function sbmclick(event){
         document.getElementById('errormsg').innerHTML =''
         event.preventDefault();//evita envío de formulario
-        //let ss = localStorage
-        let ss=sessionStorage
         //verificar usuario y contraseña y realizar el login
         if (usr.value == 'IsaT' && p1.value == 111111) {
-            //guardar estado en local storage
+            //guardar estado en ssesionstorage
             ss.setItem('ss_usuario',usr.value)
             history. back()
             }   
         else if (usr.value == 'dCF' && p1.value == 111111) {
-            //guardar estado en local storage
+            //guardar estado en sessionstorage
             ss.setItem('ss_usuario',usr.value)
             history. back()
             }
         else if (usr.value == 'invitado' && p1.value == 111111){
-            //guardar usuario en localstorage
+            //guardar usuario en sessionstorage
             ss.setItem('ss_usuario',usr.value)
             history. back()
         }

@@ -6,25 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    
-    <link href="estilos/menu.css" rel="stylesheet" />
-    <link href="estilos/cartas.css" rel="stylesheet" />
-    <link href="estilos/footer.css" rel="stylesheet" />
-    <link href="estilos/somos.css" rel="stylesheet" />
-    <link href="estilos/inscripcion.css" rel="stylesheet" />
-    <title>inscripción</title>
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/receta.css">
+    <link rel="stylesheet" href="estilos/somos.css" />
+    <link rel="stylesheet" href="estilos/menu.css"/>
+    <link rel="stylesheet" href="estilos/cartas.css"/>
+    <link rel="stylesheet" href="estilos/footer.css"/>
+    <link rel="stylesheet" href="estilos/banner.css">
+    <link rel="icon" href="imagenes/logo_mini.gif">
+    <title>INSCRIPCIÓN - Tus mejores recetas</title>
 </head>
 
 <body>
     <header>
         <div class="header_superior">
             <div class="logo">
-                <img src="imagenes/logo.jpg" >
+                <img src="imagenes/logo.gif" >
 
-            </div>
-            <div class="search">
-                <input type="search" placeholder="¿Qué deseas buscar?">
             </div>
         </div>
         <div class="container_menu">
@@ -35,42 +34,21 @@
                 </label>
                 <nav>
                     <ul>                       
-                        <li><a href="index.html">
-                                <i class="fa-solid fa-house"></i> home
-                               
-                            </a>
-                            
-                        </li>
-                        <li><a href="index.html">
-                            <i class="fa-solid fa-utensils"></i> 
-                                Recetas
-                            </a>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i>HOME</a></li>
+                        <li><a href="#"><i class="fa-solid fa-utensils"></i>RECETAS</a>
                             <ul>
-                                <li><a href="#">recetas faciles</a></li>
-                                <li><a href="#">recetas niños</a></li>
-                                <li><a href="#">recetas verano</a></li>
-                                <li><a href="#">recetas de pollo</a></li>
-                                <li><a href="#">recetas saludables</a></li>
-                                <li><a href="#">recetas vegetarianas</a></li>
+                                <li><a href="pagina_receta.html">COMIDA CHINA</a></li>
+                                <li><a href="#">COMIDA MEXICANA</a></li>
+                                <li><a href="#">COMIDA ITALIANA</a></li>
+                                <li><a href="#">COMIDA ARABE</a></li>
+                                <li><a href="#">COMIDA ESPAÑOLA</a></li>
+                                <li><a href="#">COMIDA HINDU</a></li>
                             </ul>
-                        </li>
-    
-                        <li><a href="weare#somos">
-                                <i class="fa-sharp fa-solid fa-people-roof"></i>
-                                Quienes somos
-                            </a></li>
-                        <li><a href="login.html" id="a_ingresar">
-                                <i class="fa-solid fa-sign-in"></i>
-                                Ingresar
-                        </a></li>
-                            <li><a href="inscripcion.html">
-                                <i class="fa-solid fa-user-plus"></i>
-                                Inscribirse
-                        </a></li>
-                        <li><a href="#">
-                                <i class="fa-solid fa-envelope"></i>
-                                Contacto
-                        </a></li>
+                        </li>  
+                        <li><a href="weare.html" target="_blank"><i class="fa-sharp fa-solid fa-people-roof"></i>QUIENES SOMOS</a></li>
+                        <li><a href="login.html" id="a_ingresar"><i class="fa-solid fa-sign-in"></i>INGRESAR</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user-plus"></i>INSCRIBIRSE</a></li>
+                        <li><a href="weare.html#contacto"><i class="fa-solid fa-envelope"></i>CONTACTO</a></li>
                     </ul>
                 </nav>
             </div>
@@ -79,20 +57,19 @@
     </header>
 
     <section class="banner">
-        <div class="banner__imagen_wa">
-            <h2 class="banner__titulo_wa">Inscribite y pertenecé a nuestra comunidad</h2>
+        <a name="inicio"></a>
+        <div class="banner__imagen">
+            <img src="imagenes/banner.gif" alt="">
         </div>
-        
     </section>
 
-    <main>
+    <main><h2 class="banner__titulo_wa"></h2>
         <div class="contenedor_cartas">
                 <div class="float-child" id="somos">
                     
-                        <h3 > Al inscribirte </h3>
-                        <p> &nbsp; Podrás enviarnos mensajes, recetas, y disfrutar de los beneficiosos aportes de nuestros exponsors. 
-                            Estos beneficios incluyen descuentos especiales en locales adheridos, compras, y otros</p>
-                        <br>
+                        <h3>INSCRIBITE Y PERTENECE A NUESTRA COMUNIDAD</h3>
+                        <p> Al inscribirte Podrás enviarnos mensajes, recetas, y disfrutar de los beneficiosos aportes de nuestros exponsors. Estos beneficios incluyen descuentos especiales en locales adheridos, compras, y otros</p>
+
  
                 </div> 
 
@@ -100,7 +77,7 @@
             <div class="float-child" id="contactopcv">
             
             <article>
-                <h3> Inscripción </h3>
+                <h3> INSCRIPCION </h3>
                 <form action="" class="form-contacto" id="form-inscribir">
                       
                     <label for="nombre" class="clabel" id="lnombre">Nombre completo</label>
@@ -139,54 +116,17 @@
     </main>
 
     <footer>
-        <div class="waves">
-            <div class="wave" id= "wave1"></div>
-            <div class="wave" id= "wave2"></div>
-            <div class="wave" id= "wave3"></div>
-            <div class="wave" id= "wave4"></div>
-        </div>
         <ul class="social_icon">
-            <li><a href="#">
-                <i class="fa-brands fa-facebook"></i> 
-            </a></li>
-            <li><a href="#">
-                <i class="fa-brands fa-instagram"></i>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-brands fa-twitter"></i>
-            </a></li>
-            
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>   
         </ul>
-
         <ul class="menufooter">
-            <li><a href="#" class="contacto">
-                <i class="fa-solid fa-location-dot"></i> 
-                Av. Las malvinas 2789-CBA
-
-            </a></li>
-            <li>
-                <a href="#" class="contacto">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    +5493517834903
-
-                </a>
-            </li>
-            <li>
-                <a href="#" class="contacto">
-                    <i class="fa-solid fa-envelope"></i> 
-                    tumejorcomida@gmail.com
-
-                </a>
-            </li>
+            <li><a href="#" class="contacto"><i class="fa-solid fa-location-dot"></i>Calle Publica 0000</a></li>
+            <li><a href="#" class="contacto"><i class="fa-brands fa-whatsapp"></i>+5493510000000</a></li></a></li>
         </ul>
-        <p class="autor"><i class="fa-solid fa-copyright"></i>2023- Todos los Derechos Reservados| Grupo 7 </p>
-
-
+        <p class="autor"><i class="fa-solid fa-copyright"></i>2023 - Todos los Derechos Reservados | - Grupo 7 - </p>
     </footer>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"

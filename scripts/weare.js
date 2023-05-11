@@ -21,7 +21,7 @@ let vfile = document.getElementById("src-file")
 let allok = false
 
 submb.disabled = true
-submb.innerText = 'Completa los campos del formulario'
+submb.innerText = 'Completa los campos del formulario \n (ingresa comentario y/o adjunta archivo)'
 
 form.addEventListener('input', function (event) {
     // Cada vez que el usuario escribe algo, verificamos si
@@ -60,5 +60,5 @@ form.addEventListener('input', function (event) {
     if (allok) {submb.disabled = false
         submb.innerText = "Inscribir"}
     else {submb.disabled = true
-        submb.innerText = 'Completa los campos del formulario'  }    
+        submb.innerText = 'Completa los campos del formulario  \n (ingresa comentario y/o adjunta archivo)'  }    
 })

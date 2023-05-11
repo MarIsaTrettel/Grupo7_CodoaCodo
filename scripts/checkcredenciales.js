@@ -1,4 +1,3 @@
-//let ss = localStorage
 let ss = sessionStorage
 let ss_usr = ss.getItem('ss_usuario')
 //link a login
@@ -13,6 +12,6 @@ if (ss_usr === null) {
     a_usr.innerHTML = "<i class='fa-solid fa-sign-in'></i>Ingresar"
   }
 else {
-    a_usr.innerHTML = "<i class='fa-solid fa-user'></i>"+ss_usr
+    a_usr.innerHTML = "<i class='fa-solid fa-user'></i>"+ss_usr+"<i class='fa-solid fa-sign-out'></i>"
 }
 
