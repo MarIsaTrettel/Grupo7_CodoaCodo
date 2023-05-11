@@ -5,11 +5,11 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: Pacifico, cursive;
+    font-family: 'Lato', sans-serif;
 
 }
 body{
-    background: #f1faff;
+    background: #f4f7fa;
     
 }
 
@@ -29,17 +29,6 @@ body{
     height: calc(25vh);
 }
 
-
-.banner__titulo_wa {
-    color: #21d839;
-    font-family: Pacifico, cursive;
-    font-size: 5rem;
-    text-align: center;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    width: 100%;
-    align-items: center;
-}
-
 .float-father-cv{
     flex-wrap: wrap;
     flex-direction: row;
@@ -51,14 +40,45 @@ body{
     width: 30%;
     float: left;
     padding: 5% 0% 0% 0%;
-    margin: 1%;
-    border: 2px solid rgb(0, 85, 255);
+    margin: 1.55%;
+    border: 4px solid rgb(18, 73, 184);
     border-radius: 10px;
+    box-shadow: 10px 10px 10px 1px rgba(32,32,32,0.3);
+    min-height: 630px;
 } 
 
 .float-child h3{
     text-align: center;
     padding-bottom: 2%;
+    font-size: 3rem;
+    -webkit-text-stroke: 0.15px #fff;
+    text-shadow:  rgb(18, 73, 184) 1px 0 10px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.float-child h4 {
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px #fff;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.nombre_asi_somos {
+    font-family: Pacifico, cursive;
+}
+
+.titulo_comentario a{
+    font-size: 3rem;
+    -webkit-text-stroke: 2px #fff;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    
 }
 
 .float-child p{
@@ -70,12 +90,12 @@ body{
 
 .float-child {
     width: 90vw;
-    /* height: 500px; */
     float: left;
-    /* padding: 5% 0%; */
-    margin: 1%;
-    border: 2px solid rgba(66, 126, 247, 0.344);
-    border-radius: 10px;
+    padding: 1% 2%;
+    margin: 2% auto;
+    border: 3px solid rgba(66, 126, 247, 0.344);
+    border-radius: 5px;
+    background-color: #f4f7fa;
 } 
 
 .float-child-esponsor {
@@ -105,37 +125,52 @@ body{
 
 .form-contacto{
     margin:1%;
+    
 }
 
 .form-contacto label{
     margin-left: 3%;
+    
 }
 
 .form-control {
     margin: 0% 0% 3% 0%;
+    box-shadow: 10px 10px 10px 1px rgba(32,32,32,0.3);
+    border: 4px solid rgb(18, 73, 184);
 }   
 
 .f_comentario{
     resize: none;
     height: 100px;
     width: 100%;
+    box-shadow: 10px 10px 10px 1px rgba(32,32,32,0.3);
+    border: 4px solid rgb(18, 73, 184);
+    
 }
 
 .boton-contacto{
     padding: 10px;
     font-weight: 800;
+    box-shadow: 10px 10px 10px 1px rgba(32,32,32,0.3);
     background-color:#5678EF;
     color:white;
      /* rgb(151, 158, 255); */
     border-radius: 5px;
 }
-
+.boton-contacto:disabled{
+    padding: 10px;
+    font-weight: 800;
+    background-color:#acbefe;
+    color:white;
+     /* rgb(151, 158, 255); */
+    border-radius: 5px;
+}
 .inputfile {
     margin:10px;
 }
 
 .p_adjunto{
-    marging: 0%;
+    margin: 0%;
     /* padding: 1px; */
 }
 
@@ -146,6 +181,7 @@ body{
   
   .file-select::before {
     background-color: #5678EF;
+    box-shadow: 10px 10px 10px 1px rgba(32,32,32,0.3);
     color: white;
     display: flex;
     justify-content: center;
@@ -186,11 +222,9 @@ body{
         width:98%;
     }
 
-    .f_comentario{
-        cols="50";
-    }
+   
 
     .float-father-cv {
         flex-direction: column;
     }
-
+  }

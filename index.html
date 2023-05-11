@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="estilos/banner.css" rel="stylesheet" />
     <link href="estilos/menu.css" rel="stylesheet" />
     <link href="estilos/cartas.css" rel="stylesheet" />
     <link href="estilos/footer.css" rel="stylesheet" />
-    <link href="estilos/somos.css" rel="stylesheet" />
-    <title>Ingreso</title>
+    <title>inicio</title>
 </head>
 
 <body>
@@ -20,9 +21,6 @@
             <div class="logo">
                 <img src="imagenes/logo.gif" >
 
-            </div>
-            <div class="search">
-                <input type="search" placeholder="¿Qué deseas buscar?">
             </div>
         </div>
         <div class="container_menu">
@@ -33,42 +31,21 @@
                 </label>
                 <nav>
                     <ul>                       
-                        <li><a href="index.html">
-                                <i class="fa-solid fa-house"></i> home
-                               
-                            </a>
-                            
+                        <li>
+                            <a href="#"><i class="fa-solid fa-house"></i>HOME</a>                      
                         </li>
-                        <li><a href="#">
-                            <i class="fa-solid fa-utensils"></i> 
-                                Recetas
-                            </a>
+                        <li><a href="#"><i class="fa-solid fa-utensils"></i>RECETAS</a>
                             <ul>
-                                <li><a href="#">recetas faciles</a></li>
-                                <li><a href="#">recetas niños</a></li>
-                                <li><a href="#">recetas verano</a></li>
-                                <li><a href="#">recetas de pollo</a></li>
-                                <li><a href="#">recetas saludables</a></li>
-                                <li><a href="#">recetas vegetarianas</a></li>
+                                <li><a href="#">COMIDA CHINA</a></li>
+                                <li><a href="#">COMIDA MEXICANA</a></li>
+                                <li><a href="#">COMIDA ITALIANA</a></li>
+                                <li><a href="#">COMIDA ARABE</a></li>
+                                <li><a href="#">COMIDA ESPAÑOLA</a></li>
+                                <li><a href="#">COMIDA HINDU</a></li>
                             </ul>
-                        </li>
-    
-                        <li><a href="weare.html#somos">
-                                <i class="fa-sharp fa-solid fa-people-roof"></i>
-                                Quienes somos
-                            </a></li>
-                        <li><a href="login.html" id="a_ingresar">
-                                <i class="fa-solid fa-sign-in"></i>
-                                Ingresar
-                        </a></li>
-                        <li><a href="inscripcion.html">
-                            <i class="fa-solid fa-user-plus"></i>
-                            Inscribirse
-                        </a></li>
-                        <li><a href="#">
-                                <i class="fa-solid fa-envelope"></i>
-                                Contacto
-                        </a></li>
+                        </li>  
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-people-roof"></i>QUIENES SOMOS</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i>CONTACTO</a></li>
                     </ul>
                 </nav>
             </div>
@@ -77,8 +54,8 @@
     </header>
 
     <section class="banner">
-        <div class="banner__imagen_wa">
-            <h2 class="banner__titulo_wa">Dinos quién eres</h2>
+        <div class="banner__imagen">
+            <img src="imagenes/banner.gif" alt="">
         </div>
         
     </section>
@@ -105,20 +82,96 @@
                   </form> 
             </div> 
             </div>
-            
+            <div class="card_father">
+                <div class="card">
+                    <div class="card_front" style="background-image: url(imagenes/comida_mexicana.jpg);">
+                        <div class="bg"></div>
+                        <div class="body_card_front">
+                            <img src="imagenes/Flag_of_Mexico.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="card_back">
+                        <div class="body_card_back">
+                            <h3>Encontrarás</h3>
+                            <p>COMIDA MEXICANA</p>
+                            <input type="button" value="Ver Más">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_father">
+                <div class="card">
+                    <div class="card_front" style="background-image: url(imagenes/comida_italiana.jpg);">
+                        <div class="bg">
+                        </div>
+                            <div class="body_card_front">
+                                <img src="imagenes/Flag_of_Italy.png" alt="">
+                            </div>
+                    </div>
+                        <div class="card_back">
+                            <div class="body_card_back">
+                                <h3>Encontrarás</h3>
+                                <p>COMIDA ITALIANA</p>
+                                <input type="button" value="Ver Más" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_father">
+                    <div class="card">
+                        <div class="card_front" style="background-image: url(imagenes/comida_arabe.jpg);">
+                            <div class="bg"></div>
+                            <div class="body_card_front">
+                                <img src="imagenes/Flag_of_Saudi_Arabia.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card_back">
+                            <div class="body_card_back">
+                                <h3>Encontrarás</h3>
+                                <p>COMIDA ARABE</p>
+                                <input type="button" value="Ver Más">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_father">
+                    <div class="card">
+                        <div class="card_front" style="background-image: url(imagenes/comida_española.jpg);">
+                            <div class="bg"></div>
+                            <div class="body_card_front">
+                                <img src="imagenes/Flag_of_Spain.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card_back">
+                            <div class="body_card_back">
+                                <h3>Encontrarás</h3>
+                                <p>COMIDA ESPAÑOLA</p>
+                                <input type="button" value="Ver Más">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_father">
+                    <div class="card">
+                        <div class="card_front" style="background-image: url(imagenes/comida_hindu.jpg);">
+                            <div class="bg"></div>
+                            <div class="body_card_front">
+                                <img src="imagenes/Flag_of_India.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card_back">
+                            <div class="body_card_back">
+                                <h3>Encontrarás</h3>
+                                <p>COMIDA HINDU</p>
+                                <input type="button" value="Ver Más">
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
-
-        <!-- separador vertical -->
-        <div class="separadorv"></div>
     </main>
 
     <footer>
-        <div class="waves">
-            <div class="wave" id= "wave1"></div>
-            <div class="wave" id= "wave2"></div>
-            <div class="wave" id= "wave3"></div>
-            <div class="wave" id= "wave4"></div>
-        </div>
         <ul class="social_icon">
             <li><a href="#">
                 <i class="fa-brands fa-facebook"></i> 
@@ -154,15 +207,12 @@
             </li>
         </ul>
         <p class="autor"><i class="fa-solid fa-copyright"></i>2023- Todos los Derechos Reservados| Grupo 7 </p>
-
-
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/7fda2717d4.js" crossorigin="anonymous"></script>    
-<script src='scripts/login.js'></script>
+    <script src="https://kit.fontawesome.com/7fda2717d4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
