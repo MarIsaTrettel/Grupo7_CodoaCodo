@@ -13,11 +13,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-        <link href="estilos/banner.css" rel="stylesheet" />
-        <link href="estilos/menu.css" rel="stylesheet" />
-        <link href="estilos/receta.css" rel="stylesheet" />
-        <link href="estilos/footer.css" rel="stylesheet" />
-        <title>inicio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos/receta.css">
+        <link rel="stylesheet" href="estilos/somos.css" />
+        <link rel="stylesheet" href="estilos/menu.css"/>
+        <link rel="stylesheet" href="estilos/cartas.css"/>
+        <link rel="stylesheet" href="estilos/footer.css"/>
+        <link rel="stylesheet" href="estilos/banner.css">
+        <link rel="icon" href="imagenes/logo_mini.gif">
+        <title>RECETAS - Tus mejores recetas</title>
     </head>
 
     <body>
@@ -25,9 +31,6 @@
             <div class="header_superior">
                 <div class="logo">
                     <img src="imagenes/logo.gif" alt="Tus mejores recetas">
-                </div>
-                <div class="search">
-                    <input type="search" placeholder="¿Qué deseas buscar?">
                 </div>
             </div>
             <div class="container_menu">
@@ -38,10 +41,10 @@
                     </label>
                     <nav>
                         <ul>                       
-                            <li><a href="#"><i class="fa-solid fa-house"></i>HOME</a></li>
+                            <li><a href="index.html"><i class="fa-solid fa-house"></i>HOME</a></li>
                             <li><a href="#"><i class="fa-solid fa-utensils"></i>RECETAS</a>
                                 <ul>
-                                    <li><a href="#">COMIDA CHINA</a></li>
+                                    <li><a href="pagina_receta.html">COMIDA CHINA</a></li>
                                     <li><a href="#">COMIDA MEXICANA</a></li>
                                     <li><a href="#">COMIDA ITALIANA</a></li>
                                     <li><a href="#">COMIDA ARABE</a></li>
@@ -49,8 +52,10 @@
                                     <li><a href="#">COMIDA HINDU</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#"><i class="fa-sharp fa-solid fa-people-roof"></i>QUIENES SOMOS</a></li>
-                            <li><a href="#"><i class="fa-solid fa-envelope"></i>CONTACTO</a></li>
+                            <li><a href="weare.html"><i class="fa-sharp fa-solid fa-people-roof"></i>QUIENES SOMOS</a></li>
+                            <li><a href="login.html" id="a_ingresar"><i class="fa-solid fa-sign-in"></i>INGRESAR</a></li>
+                            <li><a href="inscripcion.html"><i class="fa-solid fa-user-plus"></i>INSCRIBIRSE</a></li>
+                            <li><a href="weare.html#contacto"><i class="fa-solid fa-envelope"></i>CONTACTO</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -58,16 +63,32 @@
         </header>
 
         <section class="banner">
+            <a name="inicio"></a>
             <div class="banner__imagen">
                 <img src="imagenes/banner.gif" alt="">
             </div>
         </section>
 
         <main>
-            <h1 id="titulo_de_pagina">COMIDA CHINA</h1>
-            <section class="receta_completa">           
+            <section> 
+                <div class="menu_titulo_de_pagina"> 
+                    <img class="bandera_titulo" src="imagenes/Flag_of_China.gif" alt="">
+                    <h1 class="titulo_de_pagina">COMIDA CHINA</h1>
+                    <ul class="lista_titulo_de_pagina">
+                        <li> <a href="#sushi">SUSHI</a></li>
+                        <li> <a href="#chow_fan">CHOW FAN</a></li>
+                        <li> <a href="#costillas_agridulces">COSTILLAS AGRIDULCES</a></li>
+                        <li> <a href="#pollo_kung_pao">POLLO KUNG PAO</a></li>
+                        <li> <a href="#rollitos_primavera">ROLLITOS PRIMAVERA</a></li>
+
+                    </ul><a name="sushi"></a>  
+                </div>
+            </section>
+            
+            <section class="receta_completa"> 
+                        
                 <div class="ingredientes">
-                    <h2 id="titulo_receta">Ingredientes</h2>
+                    <h2 class="titulo_receta">INGREDIENTES</h2>
                     <ul>
                         <li>2 tazas de arroz para sushi</li>
                         <li>Alga nori</li>
@@ -87,7 +108,7 @@
                 </div>
              
                 <div class="preparacion">
-                    <h2>Preparación</h2>
+                    <h2 class="titulo_preparacion">PREPARACION</h2>
                     <ol>
                         <li>Lavar el arroz: Lavar el arroz en agua unas 5-6 veces hasta que el agua salga transparente o casi. 
                             Dejar reposar 30 minutos.</li>
@@ -101,12 +122,14 @@
                             que el arroz quede a temperatura ambiente a la vez que hacemos llegar el sushi-zu a todo el arroz.</li>
                         <li>Armado del sushi: el sushi se hace con las manos mojadas.</li>
                     </ol>
+                    <a class="volver_al_inicio"  href="#inicio">Volver al inicio</a><a name="chow_fan"></a>  
                 </div>
             </section>  
 
-            <section class="receta_completa">           
+            <section class="receta_completa">   
+                      
                 <div class="ingredientes">
-                    <h2 id="titulo_receta">Ingredientes</h2>
+                    <h2 class="titulo_receta">INGREDIENTES</h2>
                     <ul>
                         <li>2 tazas de arroz para sushi</li>
                         <li>Alga nori</li>
@@ -126,7 +149,7 @@
                 </div>
              
                 <div class="preparacion">
-                    <h2>Preparación</h2>
+                    <h2 class="titulo_preparacion">PREPARACION</h2>
                     <ol>
                         <li>Lavar el arroz: Lavar el arroz en agua unas 5-6 veces hasta que el agua salga transparente o casi. 
                             Dejar reposar 30 minutos.</li>
@@ -140,16 +163,134 @@
                             que el arroz quede a temperatura ambiente a la vez que hacemos llegar el sushi-zu a todo el arroz.</li>
                         <li>Armado del sushi: el sushi se hace con las manos mojadas.</li>
                     </ol>
+                    <a class="volver_al_inicio"  href="#inicio">Volver al inicio</a><a name="costillas_agridulces"></a> 
                 </div>
             </section>   
+
+            <section class="receta_completa"> 
+                         
+                <div class="ingredientes">
+                    <h2 class="titulo_receta">INGREDIENTES</h2>
+                    <ul>
+                        <li>2 tazas de arroz para sushi</li>
+                        <li>Alga nori</li>
+                        <li>Semillas de sésamo (negro y tostado)</li>
+                        <li>Salsa de soja</li>
+                        <li>4 cdas. de vinagre de arroz</li>
+                        <li>2 cdas. de azúcar</li>
+                        <li>1 cdita. de sal</li>
+                        <li>Salmón</li>
+                        <li>Palta</li>
+                        <li>Queso filadelfia</li>
+                    </ul>
+                </div>
+                <div class="imagen_receta">
+                    <img src="imagenes/costillas_agridulces.jpg" alt="costillas_agridulces" class="sector_uno" />
+                    <div class="nombre">COSTILLAS AGRIDULCES</div>
+                </div>
+             
+                <div class="preparacion">
+                    <h2 class="titulo_preparacion">PREPARACION</h2>
+                    <ol>
+                        <li>Lavar el arroz: Lavar el arroz en agua unas 5-6 veces hasta que el agua salga transparente o casi. 
+                            Dejar reposar 30 minutos.</li>
+                        <li>Cocinar el arroz: poner en una olla con igual cantidad de agua (2 tazas de arroz, 2 tazas de agua). 
+                            Tapar.</li>
+                        <li>Hacer el sushi-zu: mientras reposa el arroz, mezclar las 4 cdas. de vinagre de arroz con las 2 cdas. 
+                            de azúcar y la cdita. de sal. Revolver hasta que esté el azúcar disuelta.</li>
+                        <li>Enfriar el arroz: tras el reposo, colocar el arroz en un molde amplio (ideal si es de madera), que 
+                            sea bien abierto. Volcar el aderezo sobre él e ir con cuidado separándolo con una cuchara y 
+                            revolviéndolo mientras lo abanicamos con un abanico ad hoc o con una revista Paparazzi. La idea es 
+                            que el arroz quede a temperatura ambiente a la vez que hacemos llegar el sushi-zu a todo el arroz.</li>
+                        <li>Armado del sushi: el sushi se hace con las manos mojadas.</li>
+                    </ol>
+                    <a class="volver_al_inicio" href="#inicio">Volver al inicio</a><a name="pollo_kung_pao"></a>
+                </div>
+            </section>
+
+            <section class="receta_completa"> 
+                          
+                <div class="ingredientes">
+                    <h2 class="titulo_receta">INGREDIENTES</h2>
+                    <ul>
+                        <li>2 tazas de arroz para sushi</li>
+                        <li>Alga nori</li>
+                        <li>Semillas de sésamo (negro y tostado)</li>
+                        <li>Salsa de soja</li>
+                        <li>4 cdas. de vinagre de arroz</li>
+                        <li>2 cdas. de azúcar</li>
+                        <li>1 cdita. de sal</li>
+                        <li>Salmón</li>
+                        <li>Palta</li>
+                        <li>Queso filadelfia</li>
+                    </ul>
+                </div>
+                <div class="imagen_receta">
+                    <img src="imagenes/pollo_kung_pao.jpg" alt="pollo kung pao" class="sector_uno" />
+                    <div class="nombre">POLLO KUNG PAO</div>
+                </div>
+             
+                <div class="preparacion">
+                    <h2 class="titulo_preparacion">PREPARACION</h2>
+                    <ol>
+                        <li>Lavar el arroz: Lavar el arroz en agua unas 5-6 veces hasta que el agua salga transparente o casi. 
+                            Dejar reposar 30 minutos.</li>
+                        <li>Cocinar el arroz: poner en una olla con igual cantidad de agua (2 tazas de arroz, 2 tazas de agua). 
+                            Tapar.</li>
+                        <li>Hacer el sushi-zu: mientras reposa el arroz, mezclar las 4 cdas. de vinagre de arroz con las 2 cdas. 
+                            de azúcar y la cdita. de sal. Revolver hasta que esté el azúcar disuelta.</li>
+                        <li>Enfriar el arroz: tras el reposo, colocar el arroz en un molde amplio (ideal si es de madera), que 
+                            sea bien abierto. Volcar el aderezo sobre él e ir con cuidado separándolo con una cuchara y 
+                            revolviéndolo mientras lo abanicamos con un abanico ad hoc o con una revista Paparazzi. La idea es 
+                            que el arroz quede a temperatura ambiente a la vez que hacemos llegar el sushi-zu a todo el arroz.</li>
+                        <li>Armado del sushi: el sushi se hace con las manos mojadas.</li>
+                    </ol>
+                    <a class="volver_al_inicio" href="#inicio">Volver al inicio</a><a name="rollitos_primavera"></a>
+                </div>
+            </section>
+
+            <section class="receta_completa"> 
+                          
+                <div class="ingredientes">
+                    <h2 class="titulo_receta">INGREDIENTES</h2>
+                    <ul>
+                        <li>2 tazas de arroz para sushi</li>
+                        <li>Alga nori</li>
+                        <li>Semillas de sésamo (negro y tostado)</li>
+                        <li>Salsa de soja</li>
+                        <li>4 cdas. de vinagre de arroz</li>
+                        <li>2 cdas. de azúcar</li>
+                        <li>1 cdita. de sal</li>
+                        <li>Salmón</li>
+                        <li>Palta</li>
+                        <li>Queso filadelfia</li>
+                    </ul>
+                </div>
+                <div class="imagen_receta">
+                    <img src="imagenes/rollitos_primavera.jpg" alt="Rollitos primavera" class="sector_uno" />
+                    <div class="nombre">ROLLITOS PRIMAVERA</div>
+                </div>
+             
+                <div class="preparacion">
+                    <h2 class="titulo_preparacion">PREPARACION</h2>
+                    <ol>
+                        <li>Lavar el arroz: Lavar el arroz en agua unas 5-6 veces hasta que el agua salga transparente o casi. 
+                            Dejar reposar 30 minutos.</li>
+                        <li>Cocinar el arroz: poner en una olla con igual cantidad de agua (2 tazas de arroz, 2 tazas de agua). 
+                            Tapar.</li>
+                        <li>Hacer el sushi-zu: mientras reposa el arroz, mezclar las 4 cdas. de vinagre de arroz con las 2 cdas. 
+                            de azúcar y la cdita. de sal. Revolver hasta que esté el azúcar disuelta.</li>
+                        <li>Enfriar el arroz: tras el reposo, colocar el arroz en un molde amplio (ideal si es de madera), que 
+                            sea bien abierto. Volcar el aderezo sobre él e ir con cuidado separándolo con una cuchara y 
+                            revolviéndolo mientras lo abanicamos con un abanico ad hoc o con una revista Paparazzi. La idea es 
+                            que el arroz quede a temperatura ambiente a la vez que hacemos llegar el sushi-zu a todo el arroz.</li>
+                        <li>Armado del sushi: el sushi se hace con las manos mojadas.</li>
+                    </ol>
+                    <a class="volver_al_inicio"  href="#inicio">Volver al inicio</a>
+                </div>
+            </section>
         </main>
         <footer>
-            <div class="waves">
-                <div class="wave" id= "wave1"></div>
-                <div class="wave" id= "wave2"></div>
-                <div class="wave" id= "wave3"></div>
-                <div class="wave" id= "wave4"></div>
-            </div>
             <ul class="social_icon">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
@@ -160,7 +301,7 @@
                 <li><a href="#" class="contacto"><i class="fa-brands fa-whatsapp"></i>+5493510000000</a></li>
                 <li><a href="#" class="contacto"><i class="fa-solid fa-envelope"></i>tusmejoresrecetas@gmail.com</a></li>
             </ul>
-            <p class="autor"><i class="fa-solid fa-copyright"></i>2023- Todos los Derechos Reservados| Grupo 7 </p>
+            <p class="autor"><i class="fa-solid fa-copyright"></i>2023 - Todos los Derechos Reservados | - Grupo 7 - </p>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
