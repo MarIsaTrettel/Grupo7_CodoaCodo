@@ -33,10 +33,10 @@
                     <i class="fa-solid fa-bars icon_menu"></i>
                 </label>
                 <nav>
-                    <ul>                       
+                    <ul class="flex-wrap">                       
                         <li><a href="index.html"><i class="fa-solid fa-house"></i>HOME</a></li>
                         <li><a href="#"><i class="fa-solid fa-utensils"></i>RECETAS</a>
-                            <ul>
+                            <ul class="flex-wrap">
                                 <li><a href="pagina_receta.html">COMIDA CHINA</a></li>
                                 <li><a href="#">COMIDA MEXICANA</a></li>
                                 <li><a href="#">COMIDA ITALIANA</a></li>
@@ -47,6 +47,7 @@
                         </li>  
                         <li><a href="weare.html" target="_blank"><i class="fa-sharp fa-solid fa-people-roof"></i>QUIENES SOMOS</a></li>
                         <li><a href="login.html" id="a_ingresar"><i class="fa-solid fa-sign-in"></i>INGRESAR</a></li>
+                        <li><a href="mensajes.html" id="a_mensajes"><i class="fa-sharp fa-regular fa-message"></i>MENSAJES</a></li>
                         <li><a href="#"><i class="fa-solid fa-user-plus"></i>INSCRIBIRSE</a></li>
                         <li><a href="weare.html#contacto"><i class="fa-solid fa-envelope"></i>CONTACTO</a></li>
                     </ul>
@@ -79,17 +80,17 @@
             <article>
                 <h3> INSCRIPCION </h3>
                 <form action="" class="form-contacto" id="form-inscribir">
-                      
-                    <label for="nombre" class="clabel" id="lnombre">Nombre completo</label>
+                    <p . class = "p_obligatorio">Los campos * son obligatorios</p>
+                    <label for="nombre" class="clabel" id="lnombre">Nombre completo*</label>
                     <input type="text" name="nombre" id="nombre" class="form-control" value="" placeholder="Nombre completo">
                     
-                    <label for="dni" id="ldni">DNI o Pasaporte</label>
+                    <label for="dni" id="ldni">DNI o Pasaporte*</label>
                     <input type="number" name="dni" id="dni" class="form-control" placeholder="XXXXXXXX no uses puntos separadores">
 
-                    <label for="correo" id ="lcorreo">Dirección de correo</label>
+                    <label for="correo" id ="lcorreo">Dirección de correo*</label>
                     <input type="email" name="correo" id="correo" class="form-control" placeholder="Dirección d@ correo">
 
-                    <label for="usuario" id="lusuario">Nombre de usuario</label>
+                    <label for="usuario" id="lusuario">Nombre de usuario*</label>
                     <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Nombre de usuario (6 caracteres o más)">
 
                     <label for="direccion" id="ldireccion">Dirección (calle, número, depto.)</label>
@@ -98,20 +99,26 @@
                     <label for="ciudad" id="lciudad">Ciudad, Provincia, País</label>
                     <input type="text" name="ciudad" id="ciudad" class="form-control" placeholder="Ej: Villa Aquí, Córdoba, Arg.">
 
-                    <label for="pass1" id="lpas1">Contraseña</label>
+                    <label for="pass1" id="lpas1">Contraseña*</label>
                     <input type="password" name="pas1" id="pas1" class="form-control" placeholder="requiere 8 a 12 caracteres">
 
-                    <label for="pass2" id="lpas2">Repetir contraseña</label>
+                    <label for="pass2" id="lpas2">Repetir contraseña*</label>
                     <input type="password" name="pas2" id="pas2" class="form-control" placeholder="igual a la anterior">
-
                     
-                    <div class="center"><button type="submit" class="boton-contacto" id="mandar" onclick="">Enviar</button></div>
+                    <div class="inputfile">
+                        <label for="foto" id="lfoto">Foto de perfil</label>
+                        <div class="file-select">
+                            <input type="file" name="src-file"  id="src-file" aria-label="Archivo" accept="image/*">
+                        </div>
+                    </div>
+
+                    <div class="center"><button type="submit" class="boton-contacto" id="mandar" onclick="sbmclick(event)">Enviar</button></div>
                   </form> 
             </div>
             
         </div>
 
-        <!-- separador vertical mantiene las olas en su lugar-->
+        <!-- separador vertical mantiene fondo en su lugar-->
         <div class="separadorv"></div>
     </main>
 

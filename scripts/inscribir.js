@@ -44,15 +44,15 @@ let allok = false
 submb.disabled = true
 submb.innerText = 'Completa los campos del formulario'
 
-submb.addEventListener('click', function (event) {
-    // Cada vez que el usuario escribe algo, verificamos si
-    // los campos del formulario son válidos.
-    //alert('click')
-    })
+function sbmclick(event){
+    event.preventDefault();//evita envío de formulario
+    history. back()
+    }
 
 form.addEventListener('input', function (event) {
     // Cada vez que el usuario escribe algo, verificamos si
     // los campos del formulario son válidos.
+    event.preventDefault();
     allok = true
     
     //nombre
@@ -92,22 +92,22 @@ form.addEventListener('input', function (event) {
     }    
 
     //dirección
-    if (dir.value.length<6) {
+    /*if (dir.value.length<6) {
         allok = false
         ldir.innerText = ldir0 + " (la dirección debe tener al menos 6 caracteres)"
     }
     else {
         ldir.innerText = ldir0
-    }
+    }*/
     
     //ciudad
-    if (ciu.value.length<6) {
+    /*if (ciu.value.length<6) {
         allok = false
         lciu.innerText = lciu0 + " (la ciudad debe tener al menos 6 caracteres)"
     }
     else {
         lciu.innerText = lciu0
-    }
+    }*/
     
     //password
     if (p1.value.length>12 || p1.value.length<8){
@@ -125,9 +125,15 @@ form.addEventListener('input', function (event) {
         lp2.innerText = lp20
     }
 
+    // a los fines de hacer pruebas colocar 0prueba en nombre y se puede mandar
+    if (nombre.value == '0prueba') {allok = true}
+
     if (allok) {submb.disabled = false
         submb.innerText = "Inscribir"}
+
     else {submb.disabled = true
          submb.innerText = 'Completa los campos del formulario'}
+    
+        
 
 })
