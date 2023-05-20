@@ -21,10 +21,9 @@ header{
 
 .container_menu {
     width: 100%;
-    height: 40px;
+    
     background: #023877;
     opacity: 0.80;
-    padding: 0px 20px;
     border:thin solid #fff;
 }
 .menu{
@@ -39,12 +38,14 @@ nav{
 
 }
 nav > ul{
+    padding-top: 10px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     z-index: -1;
 
 }
+
 nav ul li{
     height: 100%;
     list-style: none;
@@ -55,18 +56,20 @@ nav >ul >li >a{
     font-family: 'Fira Sans', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     width: 100%;
-    height: 100%;
+    height:100%;
     display:flex;
     align-items: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 5px 10px 5px 5px;
+    font-size: 17px;
     font-weight: bold;
     transition: all 300ms ease;
     color: #fff;;
     border-radius: 30px;
     text-decoration: none;
+    white-space: nowrap;
     
 }
+
 nav >ul >li >a:hover{
     transform: scale(1.1);
     background: #0074c7;
@@ -162,7 +165,9 @@ nav ul li ul li a:hover{
     text-transform: uppercase;
 }
 
-@media screen and (max-width:720px){
+
+
+@media screen and (max-width:600px){
     nav >ul{
         flex-direction: column;
         background-color: #023877;
@@ -209,7 +214,6 @@ nav ul li ul li a:hover{
     }
 }
     
-
 
 
 
