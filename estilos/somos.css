@@ -47,6 +47,18 @@ body{
     min-height: 630px;
 } 
 
+.float-child h1{
+    text-align: center;
+    padding-bottom: 2%;
+    font-size: 4rem;
+    -webkit-text-stroke: 0.15px #fff;
+    text-shadow:  rgb(18, 73, 184) 1px 0 10px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
 .float-child h3{
     text-align: center;
     padding-bottom: 2%;
@@ -211,6 +223,9 @@ body{
     }
 
 
+    .p_obligatorio {
+        color: red;
+    }
 
   @media screen and (max-width:800px){
 

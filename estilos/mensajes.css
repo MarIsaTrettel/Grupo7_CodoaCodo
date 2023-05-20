@@ -1,0 +1,43 @@
+
+.contenedor_mensajes{
+    max-width: 1200 px;
+    margin:auto;
+    margin-top: 5px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.float-msg {
+    width: 90vw;
+    float: left;
+    padding: 1% 2%;
+    margin: 2% auto;
+    background-color: #12380e;
+    border-radius: 15px;
+} 
+.row {
+    display: flex;
+    column-gap: 20px;
+}
+
+.column-1 {
+  flex:20%;
+}
+
+.column-2 {
+    flex:70%;
+    background-color:  #d2facf;
+    border-radius: 5px;
+  }
+
+.mensajista > p {
+    color:white;
+    padding-left: 25px;
+}
+
+.mensaje > p {
+    color: #12380e;
+    font-size: 1.2em;
+}
