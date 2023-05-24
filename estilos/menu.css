@@ -38,6 +38,9 @@ nav{
 
 }
 nav > ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     padding-top: 10px;
     height: 100%;
     display: flex;
@@ -173,6 +176,8 @@ nav ul li ul li a:hover{
 
 @media screen and (max-width:600px){
     nav >ul{
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         background-color: #023877;
         align-items: center;
@@ -185,6 +190,9 @@ nav ul li ul li a:hover{
         z-index: 100;
         opacity: 0;
         visibility: hidden;
+        margin-left: 0.1px;
+        border: thin solid #ffff;
+        margin-top: 2px;
     }
 
     nav>ul>li>a:hover{
@@ -207,7 +215,8 @@ nav ul li ul li a:hover{
     }
 
     #check__menu:checked ~ nav >ul{
-        height: 500px;
+        height: auto;
+        width: auto;
         padding: 0;
         visibility: visible;
         opacity: 1;
