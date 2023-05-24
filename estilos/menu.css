@@ -83,6 +83,10 @@ a.volver_al_inicio {
     text-decoration: none;
 }
 
+#mjs {
+    margin-right: 60px;
+}
+
 /*submenu*/
 nav ul li ul{
     width: 150px;

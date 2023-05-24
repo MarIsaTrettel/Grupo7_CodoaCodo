@@ -123,7 +123,7 @@
     flex-wrap: wrap;
 }
 
-@media only screen and (max-device-width: 1100px){
+@media only screen and (max-width: 1100px){
 
     .receta_completa {
         justify-content: center;
